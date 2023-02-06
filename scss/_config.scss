@@ -4,8 +4,12 @@ $primary-white: #fff;
 $font-weights: (
     "regular": 400,
     "medium": 500,
-    "bold":600
+    "bold":700
 );
+
+@function weights($weight-name){
+    @return map-get($font-weights, $weight-name);
+  }
 
 * {
     box-sizing: border-box;

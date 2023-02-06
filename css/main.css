@@ -4,6 +4,33 @@
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home-page {
+  align-items: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../assets/model-1.jpg");
+  background-size: cover;
+  background-position: center top;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 40vh;
+  text-align: center;
+}
+.home-page-name {
+  border-bottom: 2px solid #fff;
+  font-size: 5rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.home-page-name-last {
+  color: #ff652f;
+  font-weight: 700;
+}
+
 body {
   background-color: #272727;
   color: #fff;
