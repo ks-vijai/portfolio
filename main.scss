@@ -1,0 +1,21 @@
+$primary-black: #000;
+$primary-white:#ffffff;
+$primary-pink: pink;
+
+body {
+    background-color: aqua;
+}
+
+.main{
+    background-color: $primary-black;
+    color: $primary-white;
+    
+    #{&}_paragraph {
+        margin: 0 auto;
+        width: 50%;
+    }   
+
+    &:hover {
+      color: $primary-pink;
+    }
+}

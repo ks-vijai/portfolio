@@ -1,0 +1,15 @@
+body {
+  background-color: aqua;
+}
+
+.main {
+  background-color: #000;
+  color: #ffffff;
+}
+.main .main_paragraph {
+  margin: 0 auto;
+  width: 50%;
+}
+.main:hover {
+  color: pink;
+}/*# sourceMappingURL=main.css.map */
