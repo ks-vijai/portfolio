@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #272727;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+  height: 100vh;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+main .social-icons {
+  bottom: 1rem;
+  left: 1rem;
+  position: fixed;
+}
+main a {
+  padding: 0.4rem;
+}
+main a:hover {
+  color: #ff652f;
+}
+
+footer {
+  bottom: 0.4rem;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem;
+  position: fixed;
+  right: 1rem;
+  text-align: right;
+}/*# sourceMappingURL=main.css.map */
