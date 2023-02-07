@@ -271,6 +271,34 @@
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.contact-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../assets/model-1.jpg");
+  background-size: cover;
+  background-position: center top;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 40vh;
+  text-align: center;
+}
+.contact-page h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.contact-page-list {
+  display: grid;
+  font-size: 1.5rem;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.contact-page .social-icons {
+  margin-top: 2rem;
+  position: initial;
+}
+
 body {
   background-color: #272727;
   color: #fff;
