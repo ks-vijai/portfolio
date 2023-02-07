@@ -10,7 +10,7 @@ $font-weights: (
 
 @function weights($weight-name){
     @return map-get($font-weights, $weight-name);
-  }
+}
 
 @function set-text-color($color){
     @if (lightness($color)>40){
@@ -22,6 +22,14 @@ $font-weights: (
 
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;
+}
+
+@mixin flexCenter($direction, $isWrap){
+    align-items: center;
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $isWrap;
+    justify-content: center;
 }
 
 * {

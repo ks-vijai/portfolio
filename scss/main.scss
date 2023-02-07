@@ -34,7 +34,6 @@ main {
         bottom: 1rem;
         left: 1rem;
         position: fixed;
-    }
 
     a{
         padding: 0.4rem;
@@ -44,7 +43,8 @@ main {
             color: $secondary-color;
         }
     }
-} 
+  } 
+}
 
 footer{
     bottom: 0.4rem;
