@@ -1,0 +1,33 @@
+.contact-page{
+    @include flexCenter(column,center);
+    background: 
+    linear-gradient(
+        to right,
+        rgba($primary-color,0.9),
+        rgba($primary-color,0.3)
+    ),
+    url("../assets/model-1.jpg");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 40vh;
+    text-align: center;
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &-list {
+        display: grid;
+        font-size: 1.5rem;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    .social-icons {
+        margin-top: 2rem;
+        position: initial;
+    }
+}   
