@@ -1,6 +1,7 @@
 $primary-color: #272727;
 $secondary-color: #ff652f;
 $primary-white: #fff;
+$primary-black: #000;
 $font-weights: (
     "regular": 400,
     "medium": 500,
@@ -10,6 +11,18 @@ $font-weights: (
 @function weights($weight-name){
     @return map-get($font-weights, $weight-name);
   }
+
+@function set-text-color($color){
+    @if (lightness($color)>40){
+        @return $primary-black;
+    } @else {
+        @return $primary-white;
+    }
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
 
 * {
     box-sizing: border-box;
