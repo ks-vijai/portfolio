@@ -31,6 +31,48 @@
   font-weight: 700;
 }
 
+.menu-button {
+  cursor: pointer;
+  height: 20px;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 28px;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+.menu-button-hamburger {
+  background-color: #fff;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-button-hamburger::before {
+  background-color: #fff;
+  content: "";
+  height: 3px;
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-button-hamburger::after {
+  background-color: #fff;
+  content: "";
+  height: 3px;
+  position: absolute;
+  top: -8px;
+  width: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-button-hamburger.open {
+  background: transparent;
+  transform: rotate(720deg);
+}
+
 body {
   background-color: #272727;
   color: #fff;
@@ -66,6 +108,7 @@ main .social-icons {
 }
 main a {
   padding: 0.4rem;
+  transition: all 0.5s ease-in-out;
 }
 main a:hover {
   color: #ff652f;
