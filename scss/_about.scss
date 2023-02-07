@@ -1,0 +1,60 @@
+.about-page{
+    padding-bottom: 2rem;
+
+    &-bio-image {
+        @include flexCenter(column,flex-end);
+        background: linear-gradient(
+            to right,
+            rgba($primary-color,0.9),
+            rgba($primary-color,0.3)
+            ), 
+            url("../assets/model-1.jpg") center top;
+        background-size: cover;
+        height: 50vh;
+        width: 100%;
+
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &-bio {
+        text-align: center;
+        width: 80%;
+
+        .text-secondary {
+            padding-bottom: 1rem;
+        }
+    }
+
+.my-jobs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin: 2rem auto 0 auto;
+    width: 60vw;
+
+    &-list {
+        background: lighten($primary-color, 10%);
+        border-bottom: 5px solid $secondary-color;
+        padding: 0.5rem;
+        
+        h2,h3 {
+            margin: 0.5rem 0;
+        }
+
+        h6 {
+            margin: 0.3rem 0;
+        }
+    }
+}
+
+.social-icons {
+    @include flexCenter(column,flex-end);
+}
+
+footer {
+    transform: rotate(90deg) translate(-3rem,-5rem);
+}
+
+}

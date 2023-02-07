@@ -66,8 +66,9 @@
     }
 
     .menu-navigation{
-        @include flexCenter(column,wrap);
+        @include flexCenter(column,center);
         background-color: $primary-color;
+        flex-wrap: wrap;
         height: 100vh;
         list-style-type: none;
         overflow: hidden;
