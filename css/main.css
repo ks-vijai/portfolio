@@ -64,13 +64,20 @@
   content: "";
   height: 3px;
   position: absolute;
-  top: -8px;
+  top: 8px;
   width: 20px;
   transition: all 0.5s ease-in-out;
 }
 .menu-button-hamburger.open {
   background: transparent;
   transform: rotate(720deg);
+}
+.menu-button-hamburger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-button-hamburger.open::after {
+  transform: rotate(-45deg) translate(3px, -7px);
+  width: 28px;
 }
 
 body {
