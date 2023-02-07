@@ -3,7 +3,7 @@
 
 body {
     background-color: $primary-color;
-    color: $primary-white;
+    color: set-text-color($primary-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
     height: 100vh;
@@ -14,7 +14,7 @@ h1,h2,h3 {
 }
 
 a{
-    color: $primary-white;
+    color: set-text-color($primary-color);
     text-decoration: none;
 }
 
@@ -37,6 +37,7 @@ main {
 
     a{
         padding: 0.4rem;
+        @include transition-ease;
 
         &:hover {
             color: $secondary-color;
@@ -46,7 +47,7 @@ main {
 
 footer{
     bottom: 0.4rem;
-    color: $primary-white;
+    color: set-text-color($primary-color);
     font-size: 1rem;
     padding: 1rem;
     position: fixed;
