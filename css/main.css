@@ -299,6 +299,56 @@
   position: initial;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-button {
+    visibility: hidden;
+  }
+  .navigation-bar {
+    visibility: visible;
+  }
+  .navigation-bar .menu-navigation {
+    background: transparent;
+    display: block;
+    height: 100%;
+    text-align: right;
+    transform: translateY(0);
+  }
+  .navigation-bar .menu-navigation-item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .navigation-bar .menu-navigation-link {
+    font-size: 1.5rem;
+  }
+  .about-page-bio {
+    font-size: 1.5rem;
+  }
+  .projects-page-bio-image {
+    height: 40vh;
+  }
+  .projects-page-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects-page .text-secondary {
+    font-size: 3rem;
+  }
+  .contact-page-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects-page-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact-page-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .projects-page-bio-image {
+    height: 50vh;
+  }
+}
 body {
   background-color: #272727;
   color: #fff;
