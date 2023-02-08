@@ -1,0 +1,72 @@
+// Media query above 768px Medium screens 
+
+@include media-md {
+    .menu-button {
+        visibility: hidden;
+    }
+
+    .navigation-bar {
+        visibility: visible;
+
+        .menu-navigation {
+            background: transparent;
+            display: block;
+            height: 100%;
+            text-align: right;
+            transform: translateY(0);
+
+            &-item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &-link {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .about-page-bio {
+        font-size: 1.5rem;
+    }
+
+    .projects-page {
+        &-bio-image {
+            height: 40vh; 
+        }
+
+        &-items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+
+    .contact-page-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// Media query above 1024px Large screens 
+
+@include media-lg {
+    .projects-page {
+        &-items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .contact-page-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+// Media query above 1600px Extra-large screens 
+
+@include media-xl {
+    .projects-page-bio-image {
+        height: 50vh;
+    }
+}
