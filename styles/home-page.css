@@ -29,3 +29,17 @@ a:visited {
 article:nth-of-type(3) {
   color: white;
 }
+
+.box {
+  border: 1px solid grey;
+  margin: 30px;
+  width: 450px;
+}
+
+.inline {
+  border: 1px solid white;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  /* width: 200px; */
+}
